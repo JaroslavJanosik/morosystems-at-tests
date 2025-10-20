@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env*
+!.env.dev
+
+# Playwright test results and outputs
+test-results/
+playwright-report/
+videos/
+trace.zip
+*.zip
+
+# VSCode settings
+.vscode/
+
+# TypeScript cache
+dist/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+
+# Mac OS
+.DS_Store
+
+# Coverage
+coverage/
+
+# Allure
+allure-results/
+allure-report/
+allure-history/

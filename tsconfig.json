@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "rootDir": ".",
+        "strict": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "types": [
+            "node",
+            "@playwright/test"
+        ],
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "isolatedModules": true,
+        "baseUrl": ".",
+        "paths": {
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@context/*": [
+                "test-context/*"
+            ],
+            "@support/*": [
+                "test-support/*"
+            ],
+            "@config/*": [
+                "config/*"
+            ]
+        }
+    },
+    "include": [
+        "tests/**/*.ts",
+        "pages/**/*.ts",
+        "config/**/*.ts",
+        "test-support/**/*.ts",
+        "test-context/**/*.ts",
+        "playwright.config.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
